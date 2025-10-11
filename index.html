@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CK Tech World | Future of you</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="title_item">
+          <li  class="title">
+            <h1>CK TECH WORLD</h1>
+          </li>
+          <li class="title">
+            <p style="text-align:center;">We are not only creators of projects, But also ecucators with projects</p>
+          </li>
+        </ul>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">What We Offer</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Our Faculty</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#">Register</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          Turning
+          <!-- Green highlight effect -->
+          <span class="highlight">Students</span>
+          Ideas<br />Into Real
+          <span class="highlight">Innovations!</span>
+        </h1>
+        <h4>A simpler project experience for a simpler life.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About Us</h2>
+        <h3 class="section__header">
+          Everything you need in institute to upgrade yourself.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/Iot-lazy.png"
+          data-src="img/Iot.png"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Internet of Things (IoT)</h5>
+          <p>
+            The Internet of Things (IoT) connects everyday objects, like appliances and cars, to the internet using sensors. 
+            This makes them smart enough to collect data and automatically work together to make life easier and more efficient.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Robotics: Automation in Action</h5>
+          <p>
+            Robotics is the science of designing and building machines that can sense their environment and perform tasks. 
+            These machines, or robots, are programmed to automate complex jobs, making them faster, safer, and more precise than human labor.
+          </p>
+        </div>
+        <img
+          src="img/robotic-lazy.jpg"
+          data-src="img/robotic.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/uno-lazy.png"
+          data-src="img/uno.png"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Arduino Uno</h5>
+          <p>
+            The Arduino Uno is the perfect starting point for learning electronics and coding. 
+            It's a circuit board that lets you easily connect components like sensors and motors and program them to interact with the physical world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">What We Offer</h2>
+        <h3 class="section__header">
+          Next-Generation Tech: Built and Taught
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Hands-on Training
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Ready-to-Present Project Kits
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Affordable & Student Friendly Projects
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Build Your Future: Practical Learning
+          </h5>
+          <p>
+            Come learn new skills in a super fun, interactive way where you get to work with your own hands. 
+            You'll gain cool experience that helps you rock your school projects and future goals!
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            All-in-One: Project Kits
+          </h5>
+          <p>
+            Start building immediately with a kit that has all the components and easy instructions included. 
+            You'll quickly have a finished project ready to proudly present and score great marks.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Affordable Learning, Amazing Results
+          </h5>
+          <p>
+            We believe every student should have access to high-quality learning, which is why our projects are designed to be super affordable. 
+            You get the best hands-on experience without having to spend a lot of money.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Our Faculty</h2>
+        <h3 class="section__header">
+          Meet Our Master Mentors
+          <!-- Expert Instructors: Current Master's Students
+          Learn From Tomorrow's Leaders Today 
+          Our Leaders: Students Who Teach and Build -->
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Our Founder & Chief Instructor</h5>
+            <blockquote class="testimonial__text">
+              The Founder of CK Tech World is a smart leader whose ideas come from the newest knowledge. 
+              While studying for his M.Tech, he makes sure all our lessons and projects use the latest schoolwork and ideas. 
+              This means our company is always looking ahead and using what is freshest. 
+              He's not just running a company; he's studying the future and building it right now.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">B Sai Charan</h6>
+              <p class="testimonial__location">Anantapur, Andhra Pradesh, India</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Head of Project Development
+            </h5>
+            <blockquote class="testimonial__text">
+              The Head of Project Development is the main builder who designs our important projects. 
+              He is an expert in Embedded Systems, which means he knows how to make technology reliable and efficient at its core. 
+              Also studying his M.Tech, he mixes advanced learning with hands-on building to make sure our projects are super modern and work great. 
+              He turns new research ideas directly into working technology.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Yadalam Kartheek</h6>
+              <!-- <p>B.tech, (M.tech)</p> -->
+              <p class="testimonial__location">Anantapur, Andhra Pradesh, India</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join CK Tech World is today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Register</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Register in our institute <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+
+      <h2 style="text-align: center;">Scan Here</h2>
+      <img src="img/Enrollment-QR.png" class="enrollqr">
+      <h2 style="text-align: center; ">Or</h2>
+      <a class="nav__link nav__link--btn" style="text-align: center;" href="https://docs.google.com/forms/d/e/1FAIpQLScmpqoNyhFIVLm9xxY5Zp_CYSycTovyeHKmsiNfa4xZRu1Kug/viewform?usp=header" target="_blank">Open Link</a>
+
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
