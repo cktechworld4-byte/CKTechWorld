@@ -1,4 +1,3 @@
-/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
 
 :root {
   --color-primary: #5ec576;
@@ -695,4 +694,188 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* =========================================
+   📱 RESPONSIVE DESIGN (Mobile & Tablet)
+   ========================================= */
+
+/* For tablets and small laptops (width ≤ 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%; /* slightly smaller text */
+  }
+
+  .nav {
+    padding: 0 3rem;
+  }
+
+  .features {
+    margin: 0 5rem;
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+
+  .features__feature {
+    width: 90%;
+    text-align: center;
+  }
+
+  .operations__content {
+    padding: 2rem 3rem 4rem 3rem;
+  }
+
+  .slider {
+    height: 40rem;
+  }
+}
+
+/* For mobile devices (width ≤ 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav__item {
+    margin-left: 0;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .header__img {
+    grid-column: 1;
+    grid-row: 2;
+    transform: translateY(0);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .features {
+    margin: 0 2rem;
+    gap: 3rem;
+  }
+
+  .features__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .operations {
+    margin: 8rem 1rem 0 1rem;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+
+  .testimonial::before {
+    font-size: 10rem;
+    top: -3rem;
+    left: -3rem;
+  }
+
+  .section {
+    padding: 10rem 2rem;
+  }
+
+  .section__header {
+    font-size: 3rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer__item {
+    margin-right: 0;
+  }
+
+  .footer__logo {
+    height: 8rem;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 3rem;
+  }
+
+  .modal__form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cookie-message {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* For very small phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 8rem 1.5rem;
+  }
+
+  .features__feature {
+    width: 100%;
+  }
+
+  .testimonial__header {
+    font-size: 1.8rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    padding: 6rem 2rem;
+  }
+
+  .footer__nav {
+    gap: 1rem;
+  }
+
+  .footer__logo {
+    height: 6rem;
+  }
 }
