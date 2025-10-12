@@ -735,21 +735,40 @@ h4 {
     font-size: 50%;
   }
 
-  .nav {
-    flex-direction: row;
+.nav {
+    flex-direction: row;        /* keep row format */
+    justify-content: space-between;
+    align-items: center;
     height: auto;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 
   .nav__links {
-    flex-direction: row;
+    flex-direction: row;        /* keep links inline */
+    flex-wrap: wrap;            /* allow wrapping only if very narrow */
+    justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
   }
 
   .nav__item {
-    margin-left: 0;
+    margin-left: 1rem;          /* reduce spacing */
   }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.3rem;          /* smaller text size */
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .nav__logo {
+    height: 5rem;               /* smaller logo */
+  }
+}
 
   .header__title {
     grid-template-columns: 1fr;
@@ -841,6 +860,20 @@ h4 {
   html {
     font-size: 45%;
   }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav__logo {
+    height: 4rem;
+  }
+}
 
   h1 {
     font-size: 3rem;
