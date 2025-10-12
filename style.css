@@ -742,7 +742,7 @@ h4 {
   }
 
   .nav__links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     margin-top: 1rem;
   }
